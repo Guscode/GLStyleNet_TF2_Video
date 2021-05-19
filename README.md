@@ -23,6 +23,12 @@ Running style transfer on test images:
 ```bash
 python GLStyleNet.py --content images/mvdp_win.jpeg  --style images/style.png 
 ```
+
+Running style transfer on videos:
+```bash
+python GLStyleNet.py --content your_video.mp4  --style your_style_image.png --input-type video --fps 12
+```
+
 ### Additional parameters
  
 
@@ -46,7 +52,7 @@ python GLStyleNet.py --content images/mvdp_win.jpeg  --style images/style.png
 --start-at #start at specific frame in video, default = 0.
 ```
 
-# Examples
+# Example image
 
 __Input:__ 
 
@@ -70,3 +76,6 @@ __Result__
 <a href="https://github.com/GLStyleNet_TF2_Video">
     <img src="/readme_images/jonas_stylized.jpg" alt="Logo" width="620" height="410">
 </a>
+
+
+# Example video 
