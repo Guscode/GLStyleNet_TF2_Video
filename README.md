@@ -1,6 +1,6 @@
 # GLStyleNet_TF2_Video
 
-This repo includes an updated version of [GLStyleNet](https://github.com/EndyWon/GLStyleNet) (Wang et al., 2018). <b\>
+This repo includes an updated version of [GLStyleNet](https://github.com/EndyWon/GLStyleNet) (Wang et al., 2018).
 
 Paper: [GLStyleNet: Higher Quality Style Transfer Combining Global and Local Pyramid Features](https://arxiv.org/abs/1811.07260)
 
@@ -49,8 +49,11 @@ python GLStyleNet.py --content images/mvdp_win.jpeg  --style images/style.png
 # Examples
 
 __Input:__ 
-input was the content and style pictures, masks were made automatically with masking_functions.py <b\>
-Iterations: 100 <b\>
+
+input was the content and style pictures, masks were made automatically with masking_functions.py
+
+Iterations: 100
+
 Duration: 32.4 minutes
 
 <a href="https://github.com/GLStyleNet_TF2_Video">
