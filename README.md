@@ -47,10 +47,23 @@ python GLStyleNet.py --content images/mvdp_win.jpeg  --style images/style.png
 ```
 
 # Examples
+
+__Input:__ 
+input was the content and style pictures, masks were made automatically with masking_functions.py <b\>
+Iterations: 100 <b\>
+Duration: 32.4 minutes
+
 <a href="https://github.com/GLStyleNet_TF2_Video">
     <img src="/readme_images/masked_content.png" alt="Logo" width="540" height="202">
 </a>
 
 <a href="https://github.com/GLStyleNet_TF2_Video">
     <img src="/readme_images/masked_style.png" alt="Logo" width="540" height="202">
+</a>
+
+
+__Result__
+
+<a href="https://github.com/GLStyleNet_TF2_Video">
+    <img src="/readme_images/jonas_stylized.png" alt="Logo" width="620" height="410">
 </a>
