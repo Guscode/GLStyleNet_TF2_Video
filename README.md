@@ -79,3 +79,13 @@ __Result__
 
 
 # Example video 
+
+
+The video was made with a content video of Danish cyclist Mads Pedersen winning the world championship, and an artpiece from Erik A. Frandsen.
+
+Creating videos is computationally expensive, why it is advised to use a gpu when input-type is video.
+
+The following video was made using a GPU in Google Colab Pro, with 9 fps and 100 iterations.
+Example video can be found [here](https://youtu.be/-6RMt8IbuNE)
+
+
