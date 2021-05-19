@@ -65,5 +65,5 @@ Duration: 32.4 minutes
 __Result__
 
 <a href="https://github.com/GLStyleNet_TF2_Video">
-    <img src="/readme_images/jonas_stylized.png" alt="Logo" width="620" height="410">
+    <img src="/readme_images/jonas_stylized.jpg" alt="Logo" width="620" height="410">
 </a>
