@@ -18,15 +18,16 @@ from scipy import optimize
 from pathlib import Path
 
 #Import custom masking functions
-from Masking_functions import content_masking, style_masking
+from Masking_functions import content_masking, style_masking #Added by GAL
 
 #Define layers for neural network
 CONTENT_LAYERS = ['4_1']
 LOCAL_STYLE_LAYERS = ['1_1','2_1','3_1','4_1']
 GLOBAL_STYLE_LAYERS=['1_1','2_1','3_1','4_1']
 
+
 #define function for converting stylized frames into video, taking arguments style_frame_dir and fps
-def make_video(style_frame_dir, fps):
+def make_video(style_frame_dir, fps): #Added by GAL
     img_array = [] #creating list for storing images
     all_files = glob.glob(os.path.join(style_frame_dir, "*.jpg")) #Creating list of all files in the style_frame_dir
     all_files.sort(key=lambda f: int(re.sub('\D', '', f))) #Sorting frames by numbers in filename
@@ -44,7 +45,7 @@ def make_video(style_frame_dir, fps):
     out.release() #saving video
 
 #Define function for extracting frames from a .mp4 file
-def extract_images(pathIn, fps): 
+def extract_images(pathIn, fps): #Added by GAL
     count = 0 #starting count variable for counting frames
     images = [] #adding empty array for storing frames
     video = cv2.VideoCapture(pathIn) #loading .mp4-file into video variable
@@ -230,14 +231,14 @@ class Model(object):
         self.style = np.expand_dims(style, 0).astype(np.float32)
         self.style2= np.expand_dims(style2, 0).astype(np.float32)
         
-        if content_mask is not None:
+        if content_mask is not None: #Added by GAL
             self.content_mask = np.expand_dims(content_mask, 0).astype(np.float32)
-        else:
+        else: #Added by GAL
             print("creating content mask")
             self.content_mask = np.expand_dims(content_masking(content), 0).astype(np.float32)
-        if style_mask is not None:
+        if style_mask is not None: #Added by GAL
             self.style_mask = np.expand_dims(style_mask, 0).astype(np.float32)
-        else:
+        else: #Added by GAL
             print("creating style mask")
             self.style_mask = np.expand_dims(style_masking(style), 0).astype(np.float32)
         assert self.content_mask.shape[-1] == self.style_mask.shape[-1]
@@ -352,7 +353,7 @@ class Model(object):
                     out = np.squeeze(out)
                     out = np.clip(out, 0, 255).astype('uint8')
                     cv2.imwrite('outputs/%s-%d.jpg'%(self.args.output, self.iter), out)
-            if self.args.input_type == "video": #Adding video option 
+            if self.args.input_type == "video": #Adding video option #Added by GAL
                 if self.iter == self.args.iterations: #save frame when last iteration is over
                     stylized_frame = current_img + self.pixel_mean #Add style layer
                     stylized_frame = np.squeeze(stylized_frame) #remove extra dimension
@@ -468,7 +469,7 @@ def main():
             model = Model(args, content, style, style2)
         model.run() #run model
     
-    if args.input_type == "video": #if input type is video:
+    if args.input_type == "video": #if input type is video: #Added by GAL
         
         style_frame_dir = "%s_style_frames"%Path(args.content).stem #get video name
 
@@ -503,7 +504,7 @@ def main():
                     open(os.path.join("summary", f), 'w').close()
                     os.remove(os.path.join("summary", f))
         
-        make_video(style_frame_dir, args.fps) #Create video
+        make_video(style_frame_dir, args.fps) #Create video #Added by GAL
 
         
         
