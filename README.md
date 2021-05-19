@@ -15,8 +15,8 @@ __Setting up virtual environment and downloading data__
 cd directory/where/you/want/GLStyleNet_TF2_Video
 git clone https://github.com/Guscode/GLStyleNet_TF2_Video.git
 cd GLStyleNet_TF2_Video
-bash create_stylevenv.sh
-source stylevenv/bin/activate
+bash ./create_stylevenv.sh
+source ./stylevenv/bin/activate
 ```
 
 Running style transfer on test images:
