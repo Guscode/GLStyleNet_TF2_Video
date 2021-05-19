@@ -6,6 +6,10 @@ Paper: [GLStyleNet: Higher Quality Style Transfer Combining Global and Local Pyr
 
 GLStyleNet performs state of the art style-transfer by including feature information in a novel feature pyramid fusion neural network. This version has been updated to be executable with Tensorflow 2, and features for automatic masking and stylizing videos has been added.
 
+Parts added to the GLStyleNet script are tagged with ‘#Added by GAL’
+
+Masking functions were made entirely by GAL.
+
 ## How to use
 
 To run GLStyleNet, create the virtual environment stylevenv:
