@@ -37,7 +37,7 @@ bash ./create_stylevenv.sh
 source ./stylevenv/bin/activate
 ```
 
-Running style transfer on test images:
+Running style transfer on test images *This will take ~1 hour* :
 ```bash
 python GLStyleNet.py --content images/mvdp_win.jpeg  --style images/style.png 
 ```
