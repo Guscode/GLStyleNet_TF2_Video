@@ -4,8 +4,12 @@
 
 __State-of-the-Art Style Transfer on Video__
 
-With inspiration in Erik A. Frandsen’s drawings of bike races (see figure 6), I set out to create my favorite bike racing moment on video with Erik A. Frandsen’s style, utilizing the strengths of technology to create a cultural output, that would not be possible without it. The assignment consists of incorporating video stylization in a state-of-the-art style-transfer method.  
-
+With inspiration in Erik A. Frandsen’s drawings of bike races (see picture below), I set out to create my favorite bike racing moment on video with Erik A. Frandsen’s style, utilizing the strengths of technology to create a cultural output, that would not be possible without it. The assignment consists of incorporating video stylization in a state-of-the-art style-transfer method.  
+<p align="center">
+ <a href="https://github.com/GLStyleNet_TF2_Video">
+     <img src="/readme_images/nyere.jpg" alt="Logo" width="540" height="405">
+ </a>
+</p>
 __General Information__
 
 This repo includes an updated version of [GLStyleNet](https://github.com/EndyWon/GLStyleNet) (Wang et al., 2018).
