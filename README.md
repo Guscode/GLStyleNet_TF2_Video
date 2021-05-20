@@ -42,9 +42,9 @@ Running style transfer on test images *This will take ~1 hour* :
 python GLStyleNet.py --content images/mvdp_win.jpeg  --style images/style.png 
 ```
 
-Running style transfer on videos:
+Running style transfer on videos *Should only be done with gpu* :
 ```bash
-python GLStyleNet.py --content your_video.mp4  --style your_style_image.png --input-type video --fps 12
+python GLStyleNet.py --content your_video.mp4  --style your_style_image.png --input-type video --fps 12 --device gpu
 ```
 
 ### Additional parameters
