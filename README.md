@@ -10,6 +10,8 @@ With inspiration in Erik A. Frandsen’s drawings of bike races (see picture bel
      <img src="/readme_images/nyere.jpg" alt="Logo" width="540" height="405">
  </a>
 </p>
+
+
 __General Information__
 
 This repo includes an updated version of [GLStyleNet](https://github.com/EndyWon/GLStyleNet) (Wang et al., 2018).
